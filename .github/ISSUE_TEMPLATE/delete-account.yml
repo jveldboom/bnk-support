@@ -8,8 +8,8 @@ body:
       value: |
         **This issue is public. Do not include your email address, name or any other personal details.**
 
-        To prove the account is yours we will reply here with a short code. You then sign in to bnk and add that
-        code as the description of a check. Once we see it, we delete the account and everything stored with it.
+        To confirm the account is yours, we will reply here with an email address. Write to it from the email
+        address you sign in to bnk with, and we will then delete the account and everything stored with it.
         Database backups are kept for up to 35 days and then expire.
 
         Deleting an account cannot be undone.
