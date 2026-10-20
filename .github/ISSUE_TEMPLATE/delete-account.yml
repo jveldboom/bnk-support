@@ -1,0 +1,32 @@
+name: Delete my account
+description: Ask for your bnk account and everything stored with it to be deleted
+title: "Delete my account"
+labels: [account-deletion]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public. Do not include your email address, name or any other personal details.**
+
+        To prove the account is yours we will reply here with a short code. You then sign in to bnk and add that
+        code as the description of a check. Once we see it, we delete the account and everything stored with it.
+        Database backups are kept for up to 35 days and then expire.
+
+        Deleting an account cannot be undone.
+  - type: dropdown
+    id: sign-in
+    attributes:
+      label: How do you sign in?
+      options:
+        - Google
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirm
+      options:
+        - label: I understand this deletes my account and all my checks permanently.
+          required: true
+        - label: I have not put my email address or other personal details in this issue.
+          required: true

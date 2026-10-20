@@ -1,0 +1,32 @@
+name: Report a problem
+description: Something in bnk is not working as expected
+title: "[Problem] "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **This issue is public.** Do not include your email address, account details, balances or check descriptions.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected and what happened instead. Which page were you on?
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      description: For example Safari 18 on iPhone, or Chrome 130 on Windows.
+    validations:
+      required: true
+  - type: dropdown
+    id: account
+    attributes:
+      label: Were you using the demo account?
+      options:
+        - "Yes"
+        - "No, my own account"
+    validations:
+      required: true
